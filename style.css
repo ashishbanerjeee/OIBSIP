@@ -1,222 +1,95 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-html{
-    scroll-behavior: smooth;
-}
-/* Navbar */
-.navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: sticky;
-    top: 0;
-}
-.navbar ul{
-   display: flex;
-   list-style: none;
-   margin: 20px 0px; 
-}
-.navbar ul li{
-    font-family: century;
-    font-size: 1.lrem;
-    font-weight: bold;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    padding: 8px 25px;
-    transition: all .5s ease;  
-}
-.navbar ul li a:hover{
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 10px white;
+    font-family: century Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Home Section */
-#home{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 840px;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-#home ::before{
+header{
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    background: url('1.jpg') no-repeat center center/cover;
+    background: url('Lovepik_com-500768279-artificial-intelligence-technology-brain.jpg') no-repeat center center/cover;
     height: 900px;
     width: 100%;
-    z-index: -1;
-    opacity: 0.2;
+    
+}
+ul{
+    float: right;
+    list-style: none;
+    margin-top: 25px;
+}
+ul li{
+    display:inline-block;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color:#fff;
+    color: #000;
+}
+
+ul li.active{
+   
+    color: #000;
+}
+.logo img{
+    float: left ;
+    height: auto;
+    width: 90px;
+    
 }
 .main{
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    
-    
+    max-width: 1500px;
+    margin: auto;
 }
-.headings{
-    font-family: century;
-    font-size: 3rem;
-    text-align: center;
-    margin: 40px 0px;
+.title{
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%,-50%);
 }
+
+.title h1{
+    color:  rgb(0, 234, 255);
+    font-size: 70px;
+    font-style: italic ;
+        
+
+}
+
+.title h2{
+    color: #fff;
+    position: center;
+    font-size: 35px;
+    transform: translate(5%,5%);
+    font-style: oblique;
+
+}
+
+.button{
+    position: absolute;
+    top: 60%;
+    left:45%;
+    transform: translate(-40%,-40%);
+
+}
+
 .btn{
-    padding: 10px 35px;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    outline: none;
-    transition: .6s ease;
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
 }
+
 .btn:hover{
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 5px white, 0  0 10px white, 0 0 15px white;
-    font-weight: bold;
-}
-#about{
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 20px;
-    margin-bottom: 50px;
-    background-image: url(wallpaper1.jpg);
-}
-#pic{
-    display: flex;
-}
-#pic img{
-    width: 600px;
-    height: 500px;
-}
-#intro{
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    padding: 50px;
-
-}
-#intro h2{
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.p{
-    font-size: 40px;
-    
-}
-#portfolio{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(238, 175, 227, 0.9);
-    color: white;
-    align-items: center;
-    background-image: url(ploto.jpg);
-    padding: 20px;
-}
-.gallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-sizing: border-box;
-}
-.gallery img{
-    width: 360px;
-    height: 240px;
-    margin: 10px;
-}
-#services{
-    display: flex #fff;
-    flex-direction: column;
-    padding: 20px;
-    background-color: rgb(213, 139, 20);
-    background-image: url(wallpaper.jpg);
-
-}
-.row{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-
-}
-.box{
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    height: 450px;
-    border: 1px solid black;
-    margin: 10px;
-    align-items: center;
-    text-align: justify;
-    padding: 10px;
-    border-radius: 15px;
-    background: linear-gradient(to top, rgb(77, 239, 214) 50%, white 50%);
-    background-size: 100% 200%;
-    transition: all .8s;
-
-}
-.box:hover{
-    background-position: left bottom;
-    color: rgb(12, 11, 11);
-    border: none;
-    box-shadow: 0 0 20px rgb(77, 239, 214);
-
-}
-
-
-
-#contact{
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box ;
-    background-color: rgba(94, 5, 238, 0.9);
-    color: white;
-    background-image: url(p.jpg);
-    padding: 40px;
-
-}
-.form{
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    align-items: center;
-    margin: 30px 0px;
-}
-.input{
-    padding: 19px;
-    margin: 15px;
-    width: 30%;
-    border: none;
-    outline: none;
-}
-#msg{
-    width: 1000px;
-    padding: 20px;
-    margin: 25px;
-    border: none;
-    outline: none;
-}
-#send{
-    padding: 10px;
-    width: 400px;
-    margin: 40px;
-    border: none;
-    outline: none;
-}
-#send:hover{
-    cursor: pointer;
-    box-shadow: 0 0 10px white;
+    background-color:#fff;
+    color: #000;
 }
