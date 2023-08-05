@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: century Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('Lovepik_com-500768279-artificial-intelligence-technology-brain.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    
+}
+ul{
+    float: right;
+    list-style: none;
+    margin-top: 25px;
+}
+ul li{
+    display:inline-block;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color:#fff;
+    color: #000;
+}
+
+ul li.active{
+   
+    color: #000;
+}
+.logo img{
+    float: left ;
+    height: auto;
+    width: 90px;
+    
+}
+.main{
+    max-width: 1500px;
+    margin: auto;
+}
+.title{
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.title h1{
+    color:  rgb(0, 234, 255);
+    font-size: 70px;
+    font-style: italic ;
+        
+
+}
+
+.title h2{
+    color: #fff;
+    position: center;
+    font-size: 35px;
+    transform: translate(5%,5%);
+    font-style: oblique;
+
+}
+
+.button{
+    position: absolute;
+    top: 60%;
+    left:45%;
+    transform: translate(-40%,-40%);
+
+}
+
+.btn{
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color:#fff;
+    color: #000;
+}
